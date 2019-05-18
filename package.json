@@ -1,11 +1,8 @@
 {
-    "title": "Creative",
-    "name": "startbootstrap-creative",
-    "version": "5.1.5",
-    "scripts": {
-        "start": "gulp watch"
-    },
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "title": "Heroic Features",
+    "name": "startbootstrap-heroic-features",
+    "version": "4.1.2",
+    "description": "An HTML template with a hero heading and feature cards built with Bootstrap",
     "keywords": [
         "css",
         "sass",
@@ -14,9 +11,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/creative",
+    "homepage": "https://startbootstrap.com/template-overviews/heroic-features",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-heroic-features/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -26,26 +23,14 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-heroic-features.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.8.2",
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
-        "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0"
+        "bootstrap": "4.2.1",
+        "jquery": "3.3.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.5",
-        "del": "4.1.1",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "6.1.0",
-        "gulp-clean-css": "4.2.0",
-        "gulp-header": "2.0.7",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "^1.0.1"
+        "browser-sync": "2.26.3",
+        "gulp": "4.0.0"
     }
 }

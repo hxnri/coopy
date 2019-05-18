@@ -8,243 +8,527 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>ECE 5725: COOPY</title>
 
-  <!-- Font Awesome Icons -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- Custom styles for this template -->
+  <link href="css/header-features.css" rel="stylesheet">
 
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.min.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+<!-- Navigation 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">ECE 5725: COOPY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link" href="#intro">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#design">Design/Testing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link" href="#results">Results</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#future">Future Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#references">References</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-
-  <!-- Masthead -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
-          <hr class="divider my-4">
+  </nav>-->
+  
+  <!-- Carousel Header -->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One -->
+        <div class="carousel-item active" style="background-image: url(images/coopybigname.png)">
+          <div class="carousel-caption d-none d-md-block">
+            <!--<h3 class="display-4">First Slide</h3>
+            <p class="lead">This is a description for the first slide.</p>-->
+          </div>
         </div>
-        <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        <!-- Slide Two -->
+        <div class="carousel-item" style="background-image: url(images/teembckg.png)">
+        </div>
+        <!-- Slide Three -->
+        <div class="carousel-item" style="background-image: url(images/coopybckg.png)"></div>
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="page-section bg-primary" id="about">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">We've got what you need!</h2>
-          <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="page-section" id="services">
-    <div class="container">
-      <h2 class="text-center mt-0">At Your Service</h2>
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Sturdy Themes</h3>
-            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Up to Date</h3>
-            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Ready to Publish</h3>
-            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Made with Love</h3>
-            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action Section -->
-  <section class="page-section bg-dark text-white">
+  <header class="bg-light">
     <div class="container text-center">
-      <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+      <h7>Henri Clarke (hxc2), Michael Rivera (mr858)<br>
+        ECE 5725 Final Project<br>
+        Spring 2019 (5/16/19)</h7>
+      <p class="lead"></p>
+    </div>
+  </header>
+
+  <section id="objective" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Objective</h2>
+          <p class="lead">
+            To create a friendly autonomous system based off of the Lab 3 robot.
+            We envision that our system will be able to play the game “red light / green light” with a person using visual and audio cues, as well as a remote control.
+            The system will run off of a RPi Zero W, which will communicate, via bluetooth, with the “remote control” RPi 3.
+
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+  <section id="introduction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Introduction</h2>
+            <p class="lead">
+              Coopy is a bluetooth based system which links a robot to a remote control base station.
+              The robot implements facial detection in order to properly orient itself with people.
+              The images captured by the robot are then wireless streamed to the base station for viewing.
+              The base station has a touchscreen and can be used to interact with the robot camera feed and driving system.
+              From the base station, Coopy’s new friend has the option to view the video stream, initiate the friendship wobble, or steer Coopy around with a remote control.
+  
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+  <section id="design" class="bg-light">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+        <div class="col-lg-8 mx-auto">
+          <h2>Design & Testing</h2>
         </div>
       </div>
     </div>
   </section>
+  <section id="initialdesign">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Initial Design</h3>
+          <p class="lead">
+            Our initial designs were primarily focused on the behavioral and human interaction aspects of our robot.
+            Looking back at some projects from previous years, we found a number of them which had human interaction applications had somewhat impersonal designs.
+            We wanted a robot that could not only display certain behaviors, but also communicate those states in a way which is easily understandable -- and personable! -- to any user.
+            Initially, we took a lot of inspiration from Mira [1], a robot designed by Alonso Martinez to play peek-a-boo, and wanted to design something similarly simplistic and emotive, with many nuanced movements lending it personality.
+            We also referenced the movements of <a href = "https://www.youtube.com/channel/UCxseO_JzIiiJENauW2RmcJQ">Barnaby Dixon’s</a> puppets and the <a href = "http://guyhoffman.com/blossom-handcrafted-soft-social-robot/">Blossom robot</a> in trying to draw inspiration for natural movement from a robot.
+           
+            <br><br>
+            At this point in the development cycle, our idea was for our robot, named Gloopy, to 1)  have natural movements and light-up cheek reactions, designed by us, in order to seem more alive and personable, and 2) to play Red Light, Green Light with a human.
+
+            <br><br>
+            <center><img src = "images/proposalbase.JPG"></img><img src = "images/proposalshell.JPG"></img></center>
+            <br>
+            After organizing our plan and all the parts we (thought we) needed to build Coopy, we realized that we were close to being over budget and that designing and building all of the skeleton and shell would be expensive -- both in terms of time and money.
+            We headed downtown in search of a cheaper alternative for the robot’s dome-shaped head instead of trying to 3D-print it.
+            After a lot of searching, we found an Easter egg-carrying basket shaped like a chicken at Walmart (since we were searching shortly before Easter).
+            It was roughly the size we wanted and was a relatively light plastic -- and it had already been a long day.
+            While the shell wasn’t in accordance with our initial vision and would sacrifice the design component surrounding how the robot himself looked, it was still cute and was the best option for a shell that we could find.
+            <br><br>
+            <center><img src = "images/shell1.png"></img><img src = "images/shell2.png"></img></center>
+            <br>
+
+            We then elected to use the top half of Coopy, as it fit comfortably over the Lab 3 robot’s base, and clipped all unnecessary plastic.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="design" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Facial Detection (Camera + OpenCV)</h3>
+          <p class="lead">
+              We first checked to ensure that the camera was functional. 
+              We did this with the python Picamera library [4], using the provided file recipes to display the images on a monitor (Fig. 3). Initially, we set this up with the Raspberry Pi 0W, which we wanted to keep inside of the robot in order to have a smaller design.
+            <br><br>
+            However, we discovered that the Raspberry Pi Zero W did not have the processing power to control the wheel servos, run a camera, and perform facial recognition all at the same time without sacrificing product usability! Instead, we chose to replace the Pi Zero with an additional Raspberry Pi 3 in order to perform what we needed.
+            <br><br>
+            From there, we installed OpenCV, following the steps from the Fall 2015 ECE 5725 project website, Face Recognition System, done by Jingyao Ren and Andre Heil [8].
+            We attempted the installations referenced in the OpenCV installation folder found on Blackboard, but did not find much success with them.
+            To test that the installation was successful, we used their 1_single_core.
+           py.
+            The file takes advantage of the built-in Local Binary Patterns algorithm and corresponding training files from OpenCV.
+           
+            <br><br>
+            We found that the above algorithm tended to struggle with maintaining consistent recognition of people if their faces were turned or angled. This was not ideal for our initial vision of Coopy being able to learn to recognize people, as intermittent identification could be interpreted as the detection of 2 different people.
+            <br><br>
+            As acknowledged and explored in the 2015, the previously mentioned file, 1_signel_core.
+            py, only utilizes a single processor, and could be improved by implementing multiprocessing.
+             We elected not to incorporate multiprocessing because it would make our synchronization scheme exponentially more difficult.
+             The presentation of images in the 2015 project is done on a locally connected device, where as our images are transmitted to a remote base station and must appear in order.
+             We encountered a number of communication timing issues with the development of our system, so the added complexity of synchronization with multiprocessing was not ideal.
+          
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="neopixels">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Neopixels</h3>
+            <p class="lead">
+                This part did not make it onto our final project due to software requirement issues: the library necessary to run NeoPixels off of a Raspberry Pi necessitates Python 3, whereas the version of OpenCV we installed was for Python 2.
+                Facial detection was more important, so we opted not to use NeoPixels.
+               <br><br>
+               However, we were able to make cool things happen with them after following the tutorials online. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="gui" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Base Station GUI</h3>
+          <p class="lead">
+              Because the GUI on the base station is the primary way the user interacts with Coopy, we wanted the GUI to be a reflection of Coopy’s personality. We wanted Coopy to be a warm and inviting robot friend, so we chose a simple but bright color scheme and design. The screens on the GUI menu were as follows:
+            <br><br>
+            Start screen: press start in order to navigate to the home screen.
+            <center><img src = "images/start.png"></img></center>
+            <br>
+            Home screen: has varying options of ways to interact with Coopy. Initially, we had many plans of how to interact. One idea, for example, was to have the user play a game on the piTFT, and as they lost or won Coopy would emote accordingly using their nuanced movements. 
+            <br><br>
+            <center><img src = "images/home.png"></img></center>
+            <br>
+            Friend: Coopy shakes back and forth in excitement about friendship!
+            <br><br>
+            Camera: A live video feed displays on screen; as Coopy identifies faces, he labels them as “friends” and tries to follow them with his face.
+            <br><br>
+            <center><img src = "images/facescreenshot.png"></img></center>
+            <br>
+            Drive: Coopy enters remote control mode. The user can drive Coopy around by pressing on the screen in the direction (relative to the center) that they want Coopy to drive in.
+            <br><br>
+            <center><img src = "images/drive.png"></img></center>
+            <br>
+            As a whole, we were running the GUI on the computer, so we were caught off guard when we began to run it on the piTFT and the screen was not responding to our touches.
+            In order to check that it wasn’t just the GUI code that was failing, we checked the screen_coordinates.
+           py file from Lab 2, which displays the coordinates of the touch location -- the touches were jumping around strangely where we had not touched them.
+            We realized that the reason this was happening was because we had uninstalled a specific downgrade (which we had installed in Lab 2) that fixed some weird piTFT touch screen bugs caused by the upgrade from Wheezy to Jessie and Stretch.
+            This happened at some point when we were installing new libraries or packages and rewrote that specific downgrade by mass updating our system.
+            
+           <br><br>
+           In order to fix those weird touchscreen bugs, we went through the process outlined in the Lab 2, Week 2 handout under “piTFT touch control.
+           ” [7]
+           
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bluetooth">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Bluetooth</h3>
+            <p class="lead">
+                Bluetooth was used as the primary means of communication between the different devices of our system.
+                We utilized the Bluedot Comm API [6] to streamline communication.
+                The API allows for character strings to be transmitted between a paired server and client.
+                In our initial design of the communication protocol, we attempted to transmit images over the bluetooth connection.
+                Unfortunately, Bluedot does not send entire strings, but rather terminal representations of those strings.
+                When sending entire images, the pixel arrays generated by OpenCV were reduced to a few entries concatenated by ellipses, resulting in over 90% of the information being lost in transmission.
+                We attempted to remedy this by decreasing the packet sizes and increasing the transmission rate.
+                This, however, resulted in an unforeseen consequence of randomly introducing erroneous characters into our transmissions.
+                We attempted to parse these characters out, but we found that these error characters would occasionally replace characters.
+                Having to perform error checking and failsafe measures to recover data slowed down our system to an almost inoperable rate.
+                <br><br>
+               We no longer use bluetooth to handle file transfers, instead opting for sockets.
+                We primarily use bluetooth now for simple single character strings which are sent between the server and the client.
+                Using the Bluedot callback functions, we are able to change the state of each device upon receiving a new character.
+                <br><br>
+               To properly run the Bluedot API, one must first pair the devices.
+                Bluedot provides a guide on pairing Raspberry Pi’s from the command line in its documentation.
+               
+               
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section id="sockets" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Sockets</h3>
+          <p class="lead">
+              We resorted to using sockets for file transfers after realizing it was impractical to do everything over bluetooth.
+              Upon a bluetooth connection between our devices, the server sends its wlan0 address to the client.
+              This address is then used for all future socket connections.
+              Every time we need to transmit a new image, the client sends a message to the server indicating it has a new image via bluetooth.
+              The client then opens a new socket and writes to the socket until it reaches the end of the file.
+              Once it has completed, it then switches to a waiting mode and closes the socket.
+              The server will then write the image locally and transmit via bluetooth to the client that it has finished writing.
+              The client then reverts back to a writing mode.
+             <br><br>
+             We initially attempted this by having separate processes write and display the images.
+              This occasionally caused timing issues when one process was not finished writing and the other attempted to read.
+              To resolve this, the writing and display of images were added to the data_received callback function in the server code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section id="result">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Result</h3>
+            <p class="lead">
+                Over the past few weeks, the vision of our project transitioned away from a facial detection and behavioral analysis project to more of a communication and synchronization project.
+                Our initial idea was to create a robot which could detect and remember new people.
+                The robot would then react differently to known users (as opposed to random passersby) through robot movement and neopixel LED arrays.
+                However, as we worked with facial detection, we realized that training our robot to detect individuals in such a limited time with a robot would be extremely difficult (if not impossible), especially as our camera feed became very slow.
+                In addition, we had envisioned spending more effort on the reactions and making them more realistic and personal; however, that changed as we ran out of time and realized that we needed to focus more on the communication aspects of the project.
+                It is very difficult to design a visually friendly robot on top of the technical challenges we took on, so one of them definitely had to be cut down.
+               <br><br>
+               However, during week 3 we changed our vision for the demo to be a robot who would recognize a face and have his cheeks change color because he’s happy to make a friend.
+                This was because we realized that functional camera and facial recognition was more important than Bluetooth and could still be a reasonable product.
+                While we didn’t make Coopy’s cheeks change colors due to different technical issues, we did have a reaction as a result to facial detection (ie.
+                trying to follow the face).
+                In this sense, we did successfully achieve our outlined results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="conclusion" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Conclusion</h3>
+          <p class="lead">
+              We were able to develop a two-way communication system which actively present facial detection information in real time.
+              While this was a technical feat, we also developed a robot that won over the hearts of many of our peers -- thus succeeding in our quest of making a friendly and personable design.             
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section id="future">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Future Work</h3>
+            <p class="lead">
+                If we had more time, we would have explored multiprocessing with facial detection and the video stream.
+                Although this would add synchronization challenges to our project, the benefits of increased efficiency and processor utilization could outweigh the costs of implementing multiprocessing.
+              <br><br>
+               Another area we were considering exploring were voice commands and user interactive games such as Red Light, Green Light.
+                Voice commands would require the implementation of speech recognition.
+                Red Light, Green Light would require that the robot be able to identify which person in its view is directing the game.
+              <br><br>               
+               We also wanted to make Coopy much more personable.
+                Initially, we’d wanted to add NeoPixels to his cheeks, which would glow different colors and patterns to indicate an emotional response.
+                However, we weren’t able to do that with the software and time restrictions that we had.
+                Exploring the NeoPixels and additional mechanical movement would be a fun and interesting direction.
+              <br><br>
+                   
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="references" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>References</h3>
+          <p class="lead">
+                  
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="future">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Code Appendix</h3>
+            <p class="lead">
+                The only files necessary to run the project are:
+                <br>
+                coopyServer.py, the server/base station code
+                coopyBot.py, the robot/image processing code
+                <br><br>
+                Please note, the devices must still be manually paired for bluetooth
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <section id="work" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Work Distribution</h3>
+          <p class="lead">
+              During the beginning of the lab, both Henri and Michael worked on the project’s synthesis and problem-solving together, often pair-programming.
+              As time constraints wore on the ability for both members of the team to come in at the same time (and necessitated rushing to finish), responsibilities were split based on who could come in more.
+              Henri focused more on the GUI and NeoPixels and worked some on the facial recognition, while Michael focused more on facial recognition and making the communication protocol between Pis work.
+             <br><br>
+             On the lab report, Henri and Michael wrote about the parts they worked the most on while collaborating on the general project-related sections and editing each other’s work.
+              Henri organized the information on the web page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Parts List</h3>
+            <p class="lead">
+                We used some components from lab that were exempt from our budget:
+                <br><br>
+                <table style="border:1px solid black; width:100%">
+                    <tr>
+                      <th><b>Lab Components Used</b></th>
+                      <th><b>Price</b></th> 
+                    </tr>
+                    <tr>
+                      <td>Raspberry Pi 3</td>
+                      <td>$25</td> 
+                    </tr>
+                    <tr>
+                      <td>piTFT screen</td>
+                      <td>$25</td> 
+                    </tr>
+                    <tr>
+                        <td>Expansion cable</td>
+                        <td>$4</td> 
+                    </tr>
+                    <tr>
+                        <td>Case</td>
+                        <td>$4</td> 
+                    </tr>
+                    <tr>
+                        <td>Assembled Lab 3 Robot
+                          <ul>
+                            <li>2 continuous rotation servos</li>
+                            <li>2 wheels</li>
+                            <li>2 motor brackets</li>
+                            <li>Lower deck</li>
+                            <li>Upper deck</li>
+                            <li>Small proto-board</li>
+                            <li>Caster assembly</li>
+                            <li>Assorted fasteners</li>
+                          </ul>
+                        </td>
+                        <td>$4</td> 
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td><b>$58ish</b></td> 
+                    </tr>
+                  </table>
+                  <br><br>
+                  In addition to the components utilized from lab, we purchased or borrowed components that factored into our budget allocated ($100)
+                  <br><br>
+                  <table style="border:1px solid black; width:100%">
+                  <tr>
+                    <th><b>Component Purchased</b></th>
+                    <th><b>Quantity</b></th>
+                    <th><b>Vendor</b></th>
+                    <th><b>Price</b></th>
+                  </tr>
+                  <tr>
+                      <td>Raspberry Pi Camera Board v2 - 8 Megapixels</td>
+                      <td>1</td>
+                      <td>Adafruit</td>
+                      <td>$35</td>
+                  </tr>
+                  <tr>
+                      <td>Raspberry Pi 3</td>
+                      <td>1</td>
+                      <td>Professor Skovira</td>
+                      <td>$25</td>
+                  </tr>
+                  <tr>
+                      <td>Chicken shell</td>
+                      <td>1</td>
+                      <td>Walmart</td>
+                      <td>$5</td>
+                  </tr>
+                  <tr>
+                      <td><b>Total</b></td>
+                      <td></td>
+                      <td></td>
+                      <td><b>$65</b></td>
+                  </tr>
+                  </table>
+                  <br><br>
+                  We were well within our budget, although we did buy some parts (like the NeoPixels) which we did not use on our final robot.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- Footer -->
-  <footer class="bg-light py-5">
-    <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
-    </div>
-  </footer>
+  <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -252,10 +536,9 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
 
