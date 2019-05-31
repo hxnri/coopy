@@ -1,4 +1,4 @@
-#Coopy the Friendly Chicken Robot
+# Coopy the Friendly Chicken Robot
 
 ## ECE 5725: Embedded OS || Spring 2019 || Cornell University
 
